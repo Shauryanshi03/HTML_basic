@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="post">
+        <h1>Student Registration Form</h1>
+        <fieldset>
+            <legend>Personal Information</legend>
+        <table cellspacing="5">
+            <tr>
+                <td><label for="">First Name:</label></td>
+                <td><input type="text" placeholder="Enter your first name" required></td>
+            </tr>
+            <tr>
+                <td><label for="">Last Name:</label></td>
+                <td><input type="text" placeholder="Enter your last name" required></td>
+            </tr>
+            <tr>
+                <td><label for="">Email:</label></td>
+                <td><input type="email" placeholder="example@gmail.com" required></td>
+            </tr>
+            <tr>
+                <td><label for="">Password:</label></td>
+                <td><input type="password" placeholder="Enter a password" required minlength="8" maxlength="50"></td>
+            </tr>
+            <tr>
+                <td><label for="">Contact No:</label></td>
+                <td><input type="tel" placeholder="Enter your mobile no" required maxlength="10"></td>
+            </tr>
+            <tr>
+                <td><label for="">DOB:</label></td>
+                <td><input type="date" required min="1990-12-12" max="2026-08-27"></td>
+            </tr>
+            <tr>
+                <td><label for="">Gender:</label></td>
+                <td><input type="radio" name="gender">Male
+                <input type="radio" name="gender">Female
+                <input type="radio" name="gender">Others</td>
+            </tr>
+            <tr>
+                <td><label for="">Address:</label></td>
+                <td><textarea name="" id="" minlength="2000" required></textarea></td>
+            </tr>
+        </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Educational Details</legend>
+            <table>
+                <tr>
+                    <td><label for="">Passing year of class 10th:</label></td>
+                    <td><input type="year"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Select your course:</label></td>
+                    <td>
+                        <select name="course" id=""><option value="">Choose your course</option><optgroup label="Frontend"><option value="html">HTML</option><option value="css">CSS</option><option value="js">JavaScript</option><option value="react.js">React.js</option></optgroup>
+                                                    <optgroup label="Backend"><option value="node.js">Node.js</option><option value="nest.js">Nest.js</option><option value="express.js">Express.js</option><option value="django">Django</option></optgroup>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
